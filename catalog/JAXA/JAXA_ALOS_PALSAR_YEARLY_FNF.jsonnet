@@ -108,12 +108,13 @@ local self_ee_catalog_url = ee_const.ee_catalog_url + basename;
               1.0,
             ],
             max: [
-              3.0,
+              4.0,
             ],
             palette: [
-              '006400',
-              'FEFF99',
-              '0000FF',
+              '#00b200',
+              '#83ef62',
+              '#ffff99',
+              '#0000ff',
             ],
             bands: [
               'fnf',
@@ -124,7 +125,7 @@ local self_ee_catalog_url = ee_const.ee_catalog_url + basename;
     ],
     fnf: {
       minimum: 1.0,
-      maximum: 3.0,
+      maximum: 4.0,
       'gee:estimated_range': false,
     },
   },
