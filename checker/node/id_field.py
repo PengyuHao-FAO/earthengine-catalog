@@ -1,6 +1,11 @@
 """Checks that an asset ID is valid.
 
 Detailed description of what makes a valid id here.
+
+TODO(schwehr): id_field.py should enforce that the top level directory is
+  at least 3 characters.
+TODO(schwehr): There is a dash / underscore issue. e.g. UCSB-CHG IDAHO_EPSCOR
+  New datasets should only use one.  Underscore?  Check in id_field.py.
 """
 
 import pathlib
