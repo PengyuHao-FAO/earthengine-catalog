@@ -24,14 +24,7 @@ local self_ee_catalog_url = ee_const.ee_catalog_url + basename;
   version: '1.0',
   'gee:type': ee_const.gee_type.image_collection,
   description: |||
-    The "Forest Proximate People" (FPP) dataset is one of the data layers
-    contributing to the development of indicator #13, "number of
-    forest-dependent people in extreme poverty," of the Collaborative
-    Partnership on Forests (CPF) Global Core Set of forest-related
-    indicators (GCS). The FPP dataset provides an estimate of the number of
-    people living in or within 1 kilometer of forests
-    (forest-proximate people) for the year 2019 with a pixel size of 100 meters
-    at a global level.
+    The "Forest Proximate People" (FPP) is one of the datasets contributing to the development of indicator #13, “number of forest-dependent people in extreme poverty,” of the Collaborative Partnership on Forests (CPF) Global Core Set of forest-related indicators (GCS). The FPP dataset contains 2 data layers providing estimates of the number of people living outside urban areas and within 1 Km and 5 Km, respectively, of a forest. Both for the year 2019 with a spatial resolution of 100 meters at a global level.
     [Find out more about the dataset.](https://data.apps.fao.org/catalog/dcat/forest-proximate-people)
   |||,
   license: license.id,
@@ -56,7 +49,7 @@ local self_ee_catalog_url = ee_const.ee_catalog_url + basename;
   extent: ee.extent_global('2019-01-01T00:00:00Z', null),
   summaries: {
     gsd: [
-      0.0009
+      100
     ],
     'eo:bands': [
       {
@@ -109,10 +102,7 @@ local self_ee_catalog_url = ee_const.ee_catalog_url + basename;
   'sci:publications': [
     {
       citation: |||
-        Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,
-        Linhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.
-        The number of forest- and tree-proximate people: a new methodology
-        and global estimates, One Earth, 2020
+        Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,Linhares-Juvenal, T., Pina, L., Madrid, M. & de Lamo, J. 2022. The number of forest and tree-proximate people – A new methodology and global estimates. Rome, FAO.
         [10.1016/j.oneear.2020.08.016](https://doi.org/10.1016/j.oneear.2020.08.016),
       |||,
       doi: '10.1016/j.oneear.2020.08.016',
