@@ -24,12 +24,7 @@ local self_ee_catalog_url = ee_const.ee_catalog_url + basename;
   version: '1.0',
   'gee:type': ee_const.gee_type.image_collection,
   description: |||
-    The "Tree Proximate People" (TPP) is one of the datasets contributing to the
-    development of indicator #13, number of forest-dependent people in extreme
-    poverty, of the Collaborative Partnership on Forests (CPF) Global Core Set
-    of forest-related indicators (GCS). The TPP dataset provides 4 different
-    estimates of tree proximate people (trees outside forests), all of them for
-    the year 2019 with a pixel size of 100 meters at a global level.
+    The "Tree Proximate People" (TPP) is one of the datasets contributing to the development of indicator #13, “number of forest-dependent people in extreme poverty,” of the Collaborative Partnership on Forests (CPF) Global Core Set of forest-related indicators (GCS). The TPP dataset provides 4 different estimates of tree proximate people (trees outside forests), all of them for the year 2019 with a spatial resolution of 100 meters at a global level. These datasets include: (1) Number of people living in or within 500 meters from croplands with at least 10% of tree cover; (2) Number of people living in or within 1 kilometer from croplands with at least 10% of tree cover; (3) Number of people living in or within 500 meters from agricultural lands with at least 10% of tree cover; (4) Number of people living in or within 1 kilometer from agricultural lands with at least 10% of tree cover.
     [Find out more about the dataset.](https://data.apps.fao.org/catalog/dcat/tree-proximate-people]
   |||,
   license: license.id,
@@ -60,7 +55,7 @@ local self_ee_catalog_url = ee_const.ee_catalog_url + basename;
   extent: ee.extent_global('2019-01-01T00:00:00Z', null),
   summaries: {
     gsd: [
-      0.0009
+      100
     ],
     'eo:bands': [
       {
@@ -131,10 +126,7 @@ local self_ee_catalog_url = ee_const.ee_catalog_url + basename;
   'sci:publications': [
     {
       citation: |||
-        Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,
-        Linhares-Juvenal, T., Pina, L., Madrid, M., & de Lamo, J. 2022.
-        The number of forest- and tree-proximate people: a new methodology
-        and global estimates, One Earth, 2020
+        Newton, P., Castle, S.E., Kinzer, A.T., Miller, D.C., Oldekop, J.A.,Linhares-Juvenal, T., Pina, L., Madrid, M. & de Lamo, J. 2022. The number of forest and tree-proximate people – A new methodology and global estimates. Rome, FAO.
         [10.1016/j.oneear.2020.08.016](https://doi.org/10.1016/j.oneear.2020.08.016),
       |||,
       doi: '10.1016/j.oneear.2020.08.016',
