@@ -45,4 +45,5 @@
   'Oxford/MAP/LST_Night_5km_Monthly',
   'Oxford/MAP/TCB_5km_Monthly',
   'Oxford/MAP/TCW_5km_Monthly',
+  'FAO/GAEZv5/HWSDv2'
 ]
